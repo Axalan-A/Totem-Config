@@ -43,8 +43,9 @@
 
         combo_tvp {
             timeout-ms = <100>;
-            key-positions = <11 12 13 16 17 18>;
+            key-positions = <20 31>;
             bindings = <&tog TVP1>;
+            require-prior-idle-ms = <150>;
         };
     };
 
