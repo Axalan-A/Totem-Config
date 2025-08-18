@@ -43,7 +43,7 @@
 
         combo_tvp {
             timeout-ms = <100>;
-            key-positions = <11 12 13>;
+            key-positions = <11 12 13 16 17 18>;
             bindings = <&tog TVP1>;
         };
     };
@@ -152,7 +152,7 @@
 
         // ▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄
 
-        sim_layer {
+        sym_layer {
             // ┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
 
             label = "SYM";
@@ -221,10 +221,10 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-       &kp TAB     &kp I      &kp LC(LALT)  &kp O        &kp LC(F20)    &none  &none  &none  &none  &none
-       &lt TVP2 L  &kp LEFT   &kp LALT      &kp RIGHT    &kp SPACE      &none  &none  &none  &none  &none
-&kp J  &kp LSHFT   &kp LC(C)  &kp BSPC      &kp LC(V)    &kp LC(F19)    &none  &none  &none  &none  &none  &none
-                              &trans        &kp LC(F14)  &kp LC(F13)    &none  &none  &none
+           &kp B  &kp L  &kp D    &kp C    &kp V        &kp J      &kp Y     &kp O    &kp U     &kp COMMA
+           &kp N  &kp R  &kp T    &kp S    &kp G        &kp P      &kp H     &kp A    &kp E     &kp I
+&kp LCTRL  &kp Q  &kp X  &kp M    &kp W    &kp Z        &kp K      &kp F     &kp SQT  &kp SEMI  &kp DOT    &kp RET
+                         &kp ESC  &kp TAB  &kp SPACE    &kp LSHFT  &kp BSPC  &kp DEL
             >;
         };
 
