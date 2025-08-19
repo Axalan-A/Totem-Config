@@ -31,6 +31,8 @@
     hold-trigger-on-release;
 };
 
+&sk { quick-release; };
+
 / {
     combos {
         compatible = "zmk,combos";
@@ -41,7 +43,7 @@
             bindings = <&kp ESC>;
         };
 
-        combo_tvp {
+        combo_game {
             timeout-ms = <100>;
             key-positions = <20 31>;
             bindings = <&tog 5>;
