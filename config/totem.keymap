@@ -190,9 +190,9 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-        &trans    &trans    &trans     &trans     &trans    &trans    &kp HOME     &kp INS       &kp END    &kp PAGE_UP
-        &kp LGUI  &kp LALT  &kp LCTRL  &kp LSHFT  &trans    &kp CAPS  &kp LEFT     &kp UP_ARROW  &kp DOWN   &kp RIGHT
-&trans  &trans    &trans    &trans     &trans     &trans    &trans    &kp K_PASTE  &kp K_COPY    &kp K_CUT  &kp PAGE_DOWN  &trans
+        &trans    &trans    &trans     &trans     &trans    &trans    &kp HOME     &kp INS     &kp END       &kp PAGE_UP
+        &kp LGUI  &kp LALT  &kp LCTRL  &kp LSHFT  &trans    &kp CAPS  &kp LEFT     &kp DOWN    &kp UP_ARROW  &kp RIGHT
+&trans  &trans    &trans    &trans     &trans     &trans    &trans    &kp K_PASTE  &kp K_COPY  &kp K_CUT     &kp PAGE_DOWN  &trans
                             &trans     &trans     &trans    &trans    &trans       &trans
             >;
         };
