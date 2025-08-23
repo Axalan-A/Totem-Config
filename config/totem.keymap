@@ -34,7 +34,7 @@
 &sk { quick-release; };
 
 &lt {
-    require-prior-idle-ms = <150>;
+    require-prior-idle-ms = <0>;
     flavor = "balanced";
 };
 
