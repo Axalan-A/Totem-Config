@@ -46,7 +46,7 @@
             timeout-ms = <50>;
             key-positions = <0 1>;
             bindings = <&kp ESC>;
-            require-prior-idle-ms = <150>;
+            require-prior-idle-ms = <125>;
         };
 
         combo_game {
@@ -104,6 +104,15 @@
             quick-tap-ms = <175>;
             flavor = "balanced";
         };
+
+        shift_capword: shift_capword {
+            compatible = "zmk,behavior-tap-dance";
+            label = "SHIFT_CAPWORD";
+            #binding-cells = <0>;
+            bindings = <&sk LEFT_SHIFT>, <&caps_word>;
+
+            tapping-term-ms = <150>;
+        };
     };
 
     keymap {
@@ -131,7 +140,7 @@
            &kp B          &kp L          &kp D           &kp C                &kp V          &kp J           &kp Y                  &kp O           &kp U          &kp COMMA
            &HRM_L LGUI N  &HRM_L LALT R  &HRM_L LCTRL T  &HRM_L LEFT_SHIFT S  &kp G          &kp P           &HRM_R LEFT_SHIFT H    &HRM_R LCTRL A  &HRM_R RALT E  &HRM_R LEFT_WIN I
 &kp LCTRL  &kp Q          &kp X          &kp M           &kp W                &kp Z          &kp K           &kp F                  &kp SQT         &kp SEMICOLON  &kp PERIOD         &kp ENTER
-                                         &kp ESCAPE      &lt 1 TAB            &lt 3 SPACE    &sk LEFT_SHIFT  &back_sym 2 BACKSPACE  &kp DEL
+                                         &kp ESCAPE      &lt 1 TAB            &lt 3 SPACE    &shift_capword  &back_sym 2 BACKSPACE  &kp DEL
             >;
         };
 
@@ -176,9 +185,9 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-        &kp GRAVE        &kp LESS_THAN  &kp GREATER_THAN  &kp MINUS          &kp PIPE         &kp CARET    &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp DOLLAR        &kp COMMA
-        &kp EXCLAMATION  &kp ASTERISK   &kp FSLH          &kp EQUAL          &kp AMPERSAND    &kp HASH     &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp SINGLE_QUOTE  &kp BACKSLASH
-&trans  &kp UNDER        &kp PLUS       &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp PERCENT      &kp AT_SIGN  &kp DOUBLE_QUOTES     &kp COLON              &kp SEMICOLON     &kp PERIOD     &trans
+        &kp GRAVE        &kp LESS_THAN  &kp GREATER_THAN  &kp MINUS          &kp PIPE         &kp CARET    &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp DOLLAR  &kp COMMA
+        &kp EXCLAMATION  &kp ASTERISK   &kp FSLH          &kp EQUAL          &kp AMPERSAND    &kp HASH     &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp SEMI    &kp BACKSLASH
+&trans  &kp UNDER        &kp PLUS       &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp PERCENT      &kp AT_SIGN  &kp SINGLE_QUOTE      &kp DOUBLE_QUOTES      &kp COLON   &kp PERIOD     &trans
                                         &trans            &mo 4              &trans           &trans       &trans                &trans
             >;
         };
