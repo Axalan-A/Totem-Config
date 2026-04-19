@@ -109,12 +109,12 @@
             compatible = "zmk,behavior-tap-dance";
             label = "SHIFT_CAPWORD";
             #binding-cells = <0>;
-            bindings = <&Quick_Sticky_Shift LEFT_SHIFT>, <&caps_word>;
+            bindings = <&quick_sticky_shift LEFT_SHIFT>, <&caps_word>;
 
-            tapping-term-ms = <150>;
+            tapping-term-ms = <200>;
         };
 
-        Quick_Sticky_Shift: Quick_Sticky_Shift {
+        quick_sticky_shift: quick_sticky_shift {
             compatible = "zmk,behavior-sticky-key";
             label = "QUICK_STICKY_SHIFT";
             bindings = <&sk>;
